@@ -13,8 +13,48 @@ added: read book
 ________________________________________
 added: return book
 ________________________________________
-1. read book
-2. return book
+added: buy fish
+________________________________________
+Here are the tasks in your list:
+1.[N] read book
+2.[N] return book
+3.[N] buy fish
+________________________________________
+Nice! I've marked this task as done:
+[Y] read book
+________________________________________
+added: buy helmet
+________________________________________
+Here are the tasks in your list:
+1.[Y] read book
+2.[N] return book
+3.[N] buy fish
+4.[N] buy helmet
+________________________________________
+Nice! I've marked this task as done:
+[Y] return book
+________________________________________
+added: buy chocolate cake
+________________________________________
+Here are the tasks in your list:
+1.[Y] read book
+2.[Y] return book
+3.[N] buy fish
+4.[N] buy helmet
+5.[N] buy chocolate cake
+________________________________________
+added: return colour pencils
+________________________________________
+Nice! I've marked this task as done:
+[Y] buy helmet
+________________________________________
+Here are the tasks in your list:
+1.[Y] read book
+2.[Y] return book
+3.[N] buy fish
+4.[Y] buy helmet
+5.[N] buy chocolate cake
+6.[N] return colour pencils
 ________________________________________
 Bye. Hope to see you again soon!
 ________________________________________

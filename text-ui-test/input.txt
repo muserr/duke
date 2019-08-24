@@ -1,4 +1,14 @@
 read book
 return book
+buy fish
+list
+done 1
+buy helmet
+list
+done 2
+buy chocolate cake
+list
+return colour pencils
+done 4
 list
 bye

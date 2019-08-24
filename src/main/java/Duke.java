@@ -1,11 +1,11 @@
-import javax.sound.midi.Soundbank;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Duke {
+    private static ArrayList<Task> userList = new ArrayList<>();
+
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        ArrayList<String> userList = new ArrayList<String>();
 
         String logo = " ____        _        \n"
                 + "|  _ \\ _   _| | _____ \n"
@@ -31,11 +31,40 @@ public class Duke {
                 System.out.print(lines);
                 break;
             } else if (userInputs.toLowerCase().equals("list")) {
+                System.out.println("Here are the tasks in your list:");
+
                 for (int i = 0; i < userList.size(); ++i) {
-                    System.out.println(i + 1 + ". " + userList.get(i));
+                    Task currentTask = userList.get(i);
+                    System.out.println(i + 1
+                            + ".["
+                            + currentTask.getStatusIcon()
+                            + "] "
+                            + currentTask.getStatusDescription()
+                    );
                 }
+            } else if (userInputs.toLowerCase().substring(0, 4).equals("done")) {
+                // Your input will be "done index_position (1 base)"
+                String task = userInputs.substring(5);
+
+                // Accounting for 1 base index position
+                int taskIndex = Integer.parseInt(task) - 1;
+                Task currentTask = userList.get(taskIndex);
+
+                // Setting task status as complete
+                currentTask.setComplete();
+
+                // Display result back to user
+                System.out.println("Nice! I've marked this task as done:");
+                System.out.println("["
+                        + currentTask.getStatusIcon()
+                        + "] "
+                        + currentTask.getStatusDescription()
+                );
+
             } else {
-                userList.add(userInputs);
+                // Default initialization of tasks as incomplete
+                Task newUserTask = new Task(userInputs);
+                userList.add(newUserTask);
 
                 // Displaying user inputs back to user
                 System.out.println("added: " + userInputs);
@@ -44,4 +73,6 @@ public class Duke {
             System.out.print(lines);
         }
     }
+
 }
+
