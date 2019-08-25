@@ -1,48 +1,91 @@
-________________________________________
+__________________________________________________
 Hello! I'm Duke.
 What can I do for you?
-________________________________________
+__________________________________________________
+OOPS!!! The description of a todo cannot be empty.
+__________________________________________________
 Here are the tasks in your list:
-________________________________________
+__________________________________________________
 Got it. I've added this task:
  [T][N] borrow book
 Now you have 1 tasks in the list.
-________________________________________
+__________________________________________________
 Here are the tasks in your list:
 1.[T][N] borrow book
-________________________________________
+__________________________________________________
 Got it. I've added this task:
  [D][N] return book (by: Sunday)
 Now you have 2 tasks in the list.
-________________________________________
+__________________________________________________
+OOPS!!! I'm sorry, but I don't know what that means :-(
+__________________________________________________
 Got it. I've added this task:
  [E][N] project meeting(at: Mon 2-4pm)
 Now you have 3 tasks in the list.
-________________________________________
+__________________________________________________
 Nice! I've marked this task as done:
 [Y] return book
-________________________________________
+__________________________________________________
 Here are the tasks in your list:
 1.[T][N] borrow book
 2.[D][Y] return book (by: Sunday)
 3.[E][N] project meeting(at: Mon 2-4pm)
-________________________________________
+__________________________________________________
 Got it. I've added this task:
  [D][N] do homework (by: no idea :-p)
 Now you have 4 tasks in the list.
-________________________________________
+__________________________________________________
+OOPS!!! I'm sorry, but I don't know what that means :-(
+__________________________________________________
+OOPS!!! I'm sorry, but I don't know what that means :-(
+__________________________________________________
+Got it. I've added this task:
+ [T][N] jumping jacks full speed
+Now you have 5 tasks in the list.
+__________________________________________________
+OOPS!!! I'm sorry, but I don't know what that means :-(
+__________________________________________________
+Got it. I've added this task:
+ [E][N] running(at: Tues-wed)
+Now you have 6 tasks in the list.
+__________________________________________________
 Here are the tasks in your list:
 1.[T][N] borrow book
 2.[D][Y] return book (by: Sunday)
 3.[E][N] project meeting(at: Mon 2-4pm)
 4.[D][N] do homework (by: no idea :-p)
-________________________________________
+5.[T][N] jumping jacks full speed
+6.[E][N] running(at: Tues-wed)
+__________________________________________________
 Nice! I've marked this task as done:
 [Y] project meeting
-________________________________________
+__________________________________________________
+OOPS!!! The description of a todo cannot be empty.
+__________________________________________________
+Got it. I've added this task:
+ [E][N] jogging(at: Macrichie)
+Now you have 7 tasks in the list.
+__________________________________________________
 Here are the tasks in your list:
 1.[T][N] borrow book
 2.[D][Y] return book (by: Sunday)
 3.[E][Y] project meeting(at: Mon 2-4pm)
 4.[D][N] do homework (by: no idea :-p)
-________________________________________
+5.[T][N] jumping jacks full speed
+6.[E][N] running(at: Tues-wed)
+7.[E][N] jogging(at: Macrichie)
+__________________________________________________
+Nice! I've marked this task as done:
+[Y] jumping jacks full speed
+__________________________________________________
+Here are the tasks in your list:
+1.[T][N] borrow book
+2.[D][Y] return book (by: Sunday)
+3.[E][Y] project meeting(at: Mon 2-4pm)
+4.[D][N] do homework (by: no idea :-p)
+5.[T][Y] jumping jacks full speed
+6.[E][N] running(at: Tues-wed)
+7.[E][N] jogging(at: Macrichie)
+__________________________________________________
+Bye. Hope to see you again soon!
+__________________________________________________

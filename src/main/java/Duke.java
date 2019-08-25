@@ -7,11 +7,10 @@ public class Duke {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
-        String lines = "________________________________________\n";
+        String lines = "__________________________________________________\n";
         String greet = "Hello! I'm Duke.\n" + "What can I do for you?\n";
         String bye = "Bye. Hope to see you again soon!";
 
-        // System.out.println("Hello from\n" + logo);
         // Introductory greeting
         System.out.print(lines + greet + lines);
 
@@ -37,14 +36,6 @@ public class Duke {
                     // New modifications to the display
                     System.out.println(i + 1
                             + "."
-                            /*
-                            + currentTask.getDisplayIcon()
-                            + "]["
-                            + currentTask.getStatusIcon()
-                            + "] "
-                            */
-
-                            //+ currentTask.getStatusDescription()
                             + currentTask.toString()
                     );
                 }
@@ -68,7 +59,6 @@ public class Duke {
             } else {
                 // For other tasks i.e. Deadline, Todo, Event
                 String[] commands = {"deadline", "event", "todo"};
-                System.out.print("Got it. I've added this task:\n ");
 
                 Task work;
 
@@ -80,7 +70,9 @@ public class Duke {
                     work = new Deadline(keyPhrase[0], keyPhrase[1]);
 
                     userList.add(work);
+                    System.out.print("Got it. I've added this task:\n ");
                     System.out.println(work.toString());
+                    System.out.println("Now you have " + userList.size() + " tasks in the list.");
 
                 } else if (userControl.equals("event")) {
                     // For case of deadline
@@ -89,27 +81,35 @@ public class Duke {
                     work = new Event(keyPhrase[0], keyPhrase[1]);
 
                     userList.add(work);
+                    System.out.print("Got it. I've added this task:\n ");
                     System.out.println(work.toString());
+                    System.out.println("Now you have " + userList.size() + " tasks in the list.");
 
                 } else if (userControl.equals("todo")) {
 
-                    // Create class of Todo
-                    //Todo work = new Todo(userInputsArray[1]);
-                    work = new Todo(userInputsArray[1]);
+                    // Exception handling
+                    try {
+                        work = new Todo(userInputsArray[1]);
+                        userList.add(work);
 
-                    userList.add(work);
-                    System.out.println(work.toString());
+                        System.out.print("Got it. I've added this task:\n ");
+                        System.out.println(work.toString());
+                        System.out.println("Now you have " + userList.size() + " tasks in the list.");
+
+                    } catch (ArrayIndexOutOfBoundsException e) {
+                        System.out.println("OOPS!!! The description of a todo cannot be empty.");
+                    }
+
+                } else {
+                    // For invalid inputs
+                    System.out.println("OOPS!!! I'm sorry, but I don't know what that means :-(");
                 }
 
-                System.out.println("Now you have " + userList.size() + " tasks in the list.");
             }
 
             System.out.print(lines);
         }
 
     }
-
-
-
 }
 
