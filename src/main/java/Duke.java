@@ -7,18 +7,11 @@ public class Duke {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
-        String logo = " ____        _        \n"
-                + "|  _ \\ _   _| | _____ \n"
-                + "| | | | | | | |/ / _ \\\n"
-                + "| |_| | |_| |   <  __/\n"
-                + "|____/ \\__,_|_|\\_\\___|\n";
-
         String lines = "________________________________________\n";
         String greet = "Hello! I'm Duke.\n" + "What can I do for you?\n";
         String bye = "Bye. Hope to see you again soon!";
 
-        System.out.println("Hello from\n" + logo);
-
+        // System.out.println("Hello from\n" + logo);
         // Introductory greeting
         System.out.print(lines + greet + lines);
 
@@ -26,28 +19,39 @@ public class Duke {
             // Obtain inputs from users as a string
             String userInputs = s.nextLine();
 
-            if (userInputs.toLowerCase().equals("bye")) {
+            // The limit is extremely important here
+            String[] userInputsArray = userInputs.split(" ", 2);
+            String userControl = userInputsArray[0];
+
+            if (userControl.equals("bye")) {
                 System.out.println(bye);
                 System.out.print(lines);
                 break;
-            } else if (userInputs.toLowerCase().equals("list")) {
+
+            } else if (userControl.equals("list")) {
                 System.out.println("Here are the tasks in your list:");
 
                 for (int i = 0; i < userList.size(); ++i) {
                     Task currentTask = userList.get(i);
+
+                    // New modifications to the display
                     System.out.println(i + 1
-                            + ".["
+                            + "."
+                            /*
+                            + currentTask.getDisplayIcon()
+                            + "]["
                             + currentTask.getStatusIcon()
                             + "] "
-                            + currentTask.getStatusDescription()
+                            */
+
+                            //+ currentTask.getStatusDescription()
+                            + currentTask.toString()
                     );
                 }
-            } else if (userInputs.toLowerCase().substring(0, 4).equals("done")) {
-                // Your input will be "done index_position (1 base)"
-                String task = userInputs.substring(5);
 
+            } else if (userControl.equals("done")) {
                 // Accounting for 1 base index position
-                int taskIndex = Integer.parseInt(task) - 1;
+                int taskIndex = Integer.parseInt(userInputsArray[1]) - 1;
                 Task currentTask = userList.get(taskIndex);
 
                 // Setting task status as complete
@@ -62,17 +66,50 @@ public class Duke {
                 );
 
             } else {
-                // Default initialization of tasks as incomplete
-                Task newUserTask = new Task(userInputs);
-                userList.add(newUserTask);
+                // For other tasks i.e. Deadline, Todo, Event
+                String[] commands = {"deadline", "event", "todo"};
+                System.out.print("Got it. I've added this task:\n ");
 
-                // Displaying user inputs back to user
-                System.out.println("added: " + userInputs);
+                Task work;
+
+                // Different commands
+                if (userControl.equals("deadline")) {
+                    // For case of event
+                    String[] keyPhrase = userInputsArray[1].split(" /by ");
+
+                    work = new Deadline(keyPhrase[0], keyPhrase[1]);
+
+                    userList.add(work);
+                    System.out.println(work.toString());
+
+                } else if (userControl.equals("event")) {
+                    // For case of deadline
+                    String[] keyPhrase = userInputsArray[1].split(" /at ");
+
+                    work = new Event(keyPhrase[0], keyPhrase[1]);
+
+                    userList.add(work);
+                    System.out.println(work.toString());
+
+                } else if (userControl.equals("todo")) {
+
+                    // Create class of Todo
+                    //Todo work = new Todo(userInputsArray[1]);
+                    work = new Todo(userInputsArray[1]);
+
+                    userList.add(work);
+                    System.out.println(work.toString());
+                }
+
+                System.out.println("Now you have " + userList.size() + " tasks in the list.");
             }
 
             System.out.print(lines);
         }
+
     }
+
+
 
 }
 

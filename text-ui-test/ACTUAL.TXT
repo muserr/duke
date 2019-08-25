@@ -1,60 +1,48 @@
-Hello from
- ____        _        
-|  _ \ _   _| | _____ 
-| | | | | | | |/ / _ \
-| |_| | |_| |   <  __/
-|____/ \__,_|_|\_\___|
-
 ________________________________________
 Hello! I'm Duke.
 What can I do for you?
 ________________________________________
-added: read book
+Here are the tasks in your list:
 ________________________________________
-added: return book
-________________________________________
-added: buy fish
+Got it. I've added this task:
+ [T][N] borrow book
+Now you have 1 tasks in the list.
 ________________________________________
 Here are the tasks in your list:
-1.[N] read book
-2.[N] return book
-3.[N] buy fish
+1.[T][N] borrow book
 ________________________________________
-Nice! I've marked this task as done:
-[Y] read book
+Got it. I've added this task:
+ [D][N] return book (by: Sunday)
+Now you have 2 tasks in the list.
 ________________________________________
-added: buy helmet
-________________________________________
-Here are the tasks in your list:
-1.[Y] read book
-2.[N] return book
-3.[N] buy fish
-4.[N] buy helmet
+Got it. I've added this task:
+ [E][N] project meeting(at: Mon 2-4pm)
+Now you have 3 tasks in the list.
 ________________________________________
 Nice! I've marked this task as done:
 [Y] return book
 ________________________________________
-added: buy chocolate cake
+Here are the tasks in your list:
+1.[T][N] borrow book
+2.[D][Y] return book (by: Sunday)
+3.[E][N] project meeting(at: Mon 2-4pm)
+________________________________________
+Got it. I've added this task:
+ [D][N] do homework (by: no idea :-p)
+Now you have 4 tasks in the list.
 ________________________________________
 Here are the tasks in your list:
-1.[Y] read book
-2.[Y] return book
-3.[N] buy fish
-4.[N] buy helmet
-5.[N] buy chocolate cake
-________________________________________
-added: return colour pencils
+1.[T][N] borrow book
+2.[D][Y] return book (by: Sunday)
+3.[E][N] project meeting(at: Mon 2-4pm)
+4.[D][N] do homework (by: no idea :-p)
 ________________________________________
 Nice! I've marked this task as done:
-[Y] buy helmet
+[Y] project meeting
 ________________________________________
 Here are the tasks in your list:
-1.[Y] read book
-2.[Y] return book
-3.[N] buy fish
-4.[Y] buy helmet
-5.[N] buy chocolate cake
-6.[N] return colour pencils
-________________________________________
-Bye. Hope to see you again soon!
+1.[T][N] borrow book
+2.[D][Y] return book (by: Sunday)
+3.[E][Y] project meeting(at: Mon 2-4pm)
+4.[D][N] do homework (by: no idea :-p)
 ________________________________________

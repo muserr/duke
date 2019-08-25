@@ -1,14 +1,12 @@
-read book
-return book
-buy fish
 list
-done 1
-buy helmet
+todo borrow book
 list
+deadline return book /by Sunday
+event project meeting /at Mon 2-4pm
 done 2
-buy chocolate cake
 list
-return colour pencils
-done 4
+deadline do homework /by no idea :-p
 list
-bye
+done 3
+list
+

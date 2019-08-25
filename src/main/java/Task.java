@@ -3,6 +3,7 @@
  */
 public class Task {
     protected String description;
+    protected String display;
     protected boolean isDone;
 
     /**
@@ -21,6 +22,14 @@ public class Task {
     public String getStatusIcon() {
         // Return Y for complete or N for incomplete
         return (isDone ? "Y" : "N");
+    }
+
+    /**
+     * Provides the abbreviation for the task
+     * @return display Letter representative of the task
+     */
+    public String getDisplayIcon() {
+        return this.display;
     }
 
     /**
