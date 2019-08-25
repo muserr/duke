@@ -1,0 +1,4 @@
+todo|true|washing clothes
+deadline|false|Laundry|/by|June 21
+event|true|school|/at|Campsite 1
+deadline|false|Assignment Submission|/by|2019 December 23

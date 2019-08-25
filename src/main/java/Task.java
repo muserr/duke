@@ -5,6 +5,7 @@ public class Task {
     protected String description;
     protected String display;
     protected boolean isDone;
+    protected String completed = "true";
 
     /**
      * Default constructor.
@@ -46,4 +47,12 @@ public class Task {
     public void setComplete() {
         this.isDone = true;
     }
+
+    /**
+     * Empty String generator
+     * @return Return an empty string
+     */
+    public String lineWriter(){
+        return "";
+    };
 }
