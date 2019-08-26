@@ -4,70 +4,105 @@ What can I do for you?
 __________________________________________________
 Here are the tasks in your list:
 1.[T][Y] washing clothes
-2.[D][N] Laundry (by: June 21)
-3.[E][N] school (at: Campsite 1)
+2.[D][N] Laundry (by: 8 January 2013, 12:00 AM)
+3.[E][Y] school (at: Campsite 1)
+4.[T][N] borrow book
+5.[D][Y] lunch (by: June 10 2012)
+6.[T][Y] borrow book for James
+7.[D][N] return book (by: Sunday)
+8.[E][N] project meeting (at: Mon 2-4pm)
+9.[D][N] homework assignment (by: 2 December 2019, 6:00 PM)
 __________________________________________________
 Got it. I've added this task:
- [T][N] borrow book
-Now you have 4 tasks in the list.
+ [T][N] borrow book for James
+Now you have 10 tasks in the list.
 __________________________________________________
 Got it. I've added this task:
  [D][N] return book (by: Sunday)
-Now you have 5 tasks in the list.
+Now you have 11 tasks in the list.
 __________________________________________________
 OOPS!!! I'm sorry, but I don't know what that means :-(
 __________________________________________________
 Got it. I've added this task:
  [E][N] project meeting (at: Mon 2-4pm)
-Now you have 6 tasks in the list.
+Now you have 12 tasks in the list.
 __________________________________________________
 Here are the tasks in your list:
 1.[T][Y] washing clothes
-2.[D][N] Laundry (by: June 21)
-3.[E][N] school (at: Campsite 1)
+2.[D][N] Laundry (by: 8 January 2013, 12:00 AM)
+3.[E][Y] school (at: Campsite 1)
 4.[T][N] borrow book
-5.[D][N] return book (by: Sunday)
-6.[E][N] project meeting (at: Mon 2-4pm)
+5.[D][Y] lunch (by: June 10 2012)
+6.[T][Y] borrow book for James
+7.[D][N] return book (by: Sunday)
+8.[E][N] project meeting (at: Mon 2-4pm)
+9.[D][N] homework assignment (by: 2 December 2019, 6:00 PM)
+10.[T][N] borrow book for James
+11.[D][N] return book (by: Sunday)
+12.[E][N] project meeting (at: Mon 2-4pm)
 __________________________________________________
 Nice! I've marked this task as done:
 [Y] washing clothes
 __________________________________________________
+OOPS!!! I'm sorry, but I don't know what that means :-(
+__________________________________________________
+Nice! I've marked this task as done:
+[Y] school
+__________________________________________________
 Here are the tasks in your list:
 1.[T][Y] washing clothes
-2.[D][N] Laundry (by: June 21)
-3.[E][N] school (at: Campsite 1)
+2.[D][N] Laundry (by: 8 January 2013, 12:00 AM)
+3.[E][Y] school (at: Campsite 1)
 4.[T][N] borrow book
-5.[D][N] return book (by: Sunday)
-6.[E][N] project meeting (at: Mon 2-4pm)
+5.[D][Y] lunch (by: June 10 2012)
+6.[T][Y] borrow book for James
+7.[D][N] return book (by: Sunday)
+8.[E][N] project meeting (at: Mon 2-4pm)
+9.[D][N] homework assignment (by: 2 December 2019, 6:00 PM)
+10.[T][N] borrow book for James
+11.[D][N] return book (by: Sunday)
+12.[E][N] project meeting (at: Mon 2-4pm)
 __________________________________________________
 OOPS!!! I'm sorry, but I don't know what that means :-(
 __________________________________________________
 Nice! I've marked this task as done:
-[Y] return book
+[Y] lunch
 __________________________________________________
 Here are the tasks in your list:
 1.[T][Y] washing clothes
-2.[D][N] Laundry (by: June 21)
-3.[E][N] school (at: Campsite 1)
+2.[D][N] Laundry (by: 8 January 2013, 12:00 AM)
+3.[E][Y] school (at: Campsite 1)
 4.[T][N] borrow book
-5.[D][Y] return book (by: Sunday)
-6.[E][N] project meeting (at: Mon 2-4pm)
+5.[D][Y] lunch (by: June 10 2012)
+6.[T][Y] borrow book for James
+7.[D][N] return book (by: Sunday)
+8.[E][N] project meeting (at: Mon 2-4pm)
+9.[D][N] homework assignment (by: 2 December 2019, 6:00 PM)
+10.[T][N] borrow book for James
+11.[D][N] return book (by: Sunday)
+12.[E][N] project meeting (at: Mon 2-4pm)
 __________________________________________________
 Nice! I've marked this task as done:
-[Y] project meeting
+[Y] borrow book for James
 __________________________________________________
 Got it. I've added this task:
  [D][N] homework assignment (by: 2 December 2019, 6:00 PM)
-Now you have 7 tasks in the list.
+Now you have 13 tasks in the list.
 __________________________________________________
 Here are the tasks in your list:
 1.[T][Y] washing clothes
-2.[D][N] Laundry (by: June 21)
-3.[E][N] school (at: Campsite 1)
+2.[D][N] Laundry (by: 8 January 2013, 12:00 AM)
+3.[E][Y] school (at: Campsite 1)
 4.[T][N] borrow book
-5.[D][Y] return book (by: Sunday)
-6.[E][Y] project meeting (at: Mon 2-4pm)
-7.[D][N] homework assignment (by: 2 December 2019, 6:00 PM)
+5.[D][Y] lunch (by: June 10 2012)
+6.[T][Y] borrow book for James
+7.[D][N] return book (by: Sunday)
+8.[E][N] project meeting (at: Mon 2-4pm)
+9.[D][N] homework assignment (by: 2 December 2019, 6:00 PM)
+10.[T][N] borrow book for James
+11.[D][N] return book (by: Sunday)
+12.[E][N] project meeting (at: Mon 2-4pm)
+13.[D][N] homework assignment (by: 2 December 2019, 6:00 PM)
 __________________________________________________
 Bye. Hope to see you again soon!
 __________________________________________________

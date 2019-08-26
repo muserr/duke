@@ -76,6 +76,9 @@ public class Duke {
                         throw new IllegalArgumentException();
                     }
 
+                    // Automatically save data into a file
+                    docWriter();
+
                 }
             } catch (IllegalArgumentException e) {
                 System.out.println("OOPS!!! I'm sorry, but I don't know what that means :-(");
@@ -84,8 +87,6 @@ public class Duke {
             System.out.print(lines);
         }
 
-        // Writing contents of userList to file
-        docWriter();
     }
 
     /**
