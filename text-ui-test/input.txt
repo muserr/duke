@@ -8,5 +8,6 @@ list
 done 5
 list
 done 6
+deadline homework assignment /by 2/12/2019 1800
 list
 bye

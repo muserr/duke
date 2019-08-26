@@ -5,8 +5,7 @@ import java.util.Scanner;
 public class Duke {
     private static ArrayList<Task> userList = new ArrayList<>();
 
-    //private static final String Pathway = "F:\\JK\\CS2113T_workspace\\duke\\data\\duke.txt";
-    private static final String Pathway = "E:\\Ben\\CS2113T_workspace\\duke\\data\\duke.txt";
+    private static final String Pathway = "F:\\JK\\CS2113T_workspace\\duke\\data\\duke.txt";
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
