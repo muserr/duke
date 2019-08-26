@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class Duke {
     private static ArrayList<Task> userList = new ArrayList<>();
 
-    private static final String Pathway = "F:\\JK\\CS2113T_workspace\\duke\\data\\duke.txt";
+    //private static final String Pathway = "F:\\JK\\CS2113T_workspace\\duke\\data\\duke.txt";
+    private static final String Pathway = "E:\\Ben\\CS2113T_workspace\\duke\\data\\duke.txt";
+
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
@@ -29,48 +31,54 @@ public class Duke {
             String[] userInputsArray = userInputs.split(" ", 2);
             String userControl = userInputsArray[0];
 
-            if (userControl.equals("bye")) {
-                System.out.println(bye);
-                System.out.print(lines);
-                break;
+            try {
 
-            } else if (userControl.equals("list")) {
-                displayList();
+                if (userControl.equals("bye")) {
+                    System.out.println(bye);
+                    System.out.print(lines);
+                    break;
 
-            } else if (userControl.equals("done")) {
-                taskDone(userInputsArray);
+                } else if (userControl.equals("list")) {
+                    displayList();
 
-            } else {
-                // For other tasks i.e. Deadline, Todo, Event
-                if (userControl.equals("deadline")) {
-                    // For case of event
-                    String[] keyPhrase = userInputsArray[1].split(" /by ");
-
-                    Deadline work = new Deadline(keyPhrase[0], keyPhrase[1]);
-                    addSuccess(work);
-
-                } else if (userControl.equals("event")) {
-                    // For case of deadline
-                    String[] keyPhrase = userInputsArray[1].split(" /at ");
-
-                    Event work = new Event(keyPhrase[0], keyPhrase[1]);
-                    addSuccess(work);
-
-                } else if (userControl.equals("todo")) {
-
-                    // Exception handling
-                    try {
-                        Todo work = new Todo(userInputsArray[1]);
-                        addSuccess(work);
-
-                    } catch (ArrayIndexOutOfBoundsException e) {
-                        System.out.println("OOPS!!! The description of a todo cannot be empty.");
-                    }
+                } else if (userControl.equals("done")) {
+                    taskDone(userInputsArray);
 
                 } else {
-                    // For invalid inputs
-                    System.out.println("OOPS!!! I'm sorry, but I don't know what that means :-(");
+                    // For other tasks i.e. Deadline, Todo, Event
+                    if (userControl.equals("deadline")) {
+                        // For case of event
+                        String[] keyPhrase = userInputsArray[1].split(" /by ");
+
+                        Deadline work = new Deadline(keyPhrase[0], keyPhrase[1]);
+                        addSuccess(work);
+
+                    } else if (userControl.equals("event")) {
+                        // For case of deadline
+                        String[] keyPhrase = userInputsArray[1].split(" /at ");
+
+                        Event work = new Event(keyPhrase[0], keyPhrase[1]);
+                        addSuccess(work);
+
+                    } else if (userControl.equals("todo")) {
+
+                        // Exception handling
+                        try {
+                            Todo work = new Todo(userInputsArray[1]);
+                            addSuccess(work);
+
+                        } catch (ArrayIndexOutOfBoundsException e) {
+                            System.out.println("OOPS!!! The description of a todo cannot be empty.");
+                        }
+
+                    } else {
+                        // For invalid inputs
+                        throw new IllegalArgumentException();
+                    }
+
                 }
+            } catch (IllegalArgumentException e) {
+                System.out.println("OOPS!!! I'm sorry, but I don't know what that means :-(");
             }
 
             System.out.print(lines);
