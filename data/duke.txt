@@ -1,3 +1,8 @@
 todo|true|washing clothes
-deadline|false|Laundry|/by|8/1/2013 0000
-event|true|school|/at|Campsite 1
+deadline|false|Laundry|/by|8 January 2013, 12:00 AM
+todo|false|borrow book for James
+todo|true|book club for Jasmine
+deadline|false|room booking for Eric|/by|saturday 3-5pm
+deadline|true|return book|/by|Sunday
+event|false|project meeting|/at|Mon 2-4pm
+deadline|false|homework assignment|/by|2 December 2019, 6:00 PM

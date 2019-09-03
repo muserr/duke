@@ -1,3 +1,5 @@
+import javax.print.DocFlavor;
+
 /**
  * Represents a task from user.
  */
@@ -54,5 +56,9 @@ public class Task {
      */
     public String lineWriter(){
         return "";
-    };
+    }
+
+    public boolean descriptionSearch(String keyword) {
+        return this.description.contains(keyword);
+    }
 }

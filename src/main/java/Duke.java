@@ -8,7 +8,6 @@ public class Duke {
     //private static final String Pathway = "F:\\JK\\CS2113T_workspace\\duke\\data\\duke.txt";
     private static final String Pathway = "E:\\Ben\\CS2113T_workspace\\duke\\data\\duke.txt";
 
-
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
@@ -43,6 +42,43 @@ public class Duke {
 
                 } else if (userControl.equals("done")) {
                     taskDone(userInputsArray);
+
+                } else if (userControl.equals("delete")) {
+                    try {
+                        int indexForDeletion = Integer.parseInt(userInputsArray[1]) - 1;
+
+                        deleteTask(indexForDeletion);
+                    } catch (IndexOutOfBoundsException e) {
+                        System.out.println("Please enter a valid index");
+                    }
+
+                } else if (userControl.equals("find")) {
+                    try {
+                        // Finding by keyword
+                        String keyword = userInputsArray[1];
+                        ArrayList<Task> searchList = new ArrayList<Task>();
+
+                        for (Task taskQuery : userList) {
+                            // Find task by substring
+                            if (taskQuery.descriptionSearch(keyword) == true) {
+                                searchList.add(taskQuery);
+                            }
+                        }
+
+                        // Display results of search
+                        System.out.println("Here are the matching tasks in your list for \"" + keyword + "\":");
+                        for (int i = 0; i < searchList.size(); ++i) {
+                            Task currentTask = searchList.get(i);
+
+                            // New modifications to the display
+                            System.out.println(i + 1
+                                    + "."
+                                    + currentTask.toString()
+                            );
+                        }
+                    } catch (NullPointerException | IndexOutOfBoundsException e) {
+                        System.out.println("Your search keyword cannot be empty");
+                    }
 
                 } else {
                     // For other tasks i.e. Deadline, Todo, Event
@@ -131,6 +167,14 @@ public class Duke {
         userList.add(job);
         System.out.print("Got it. I've added this task:\n ");
         System.out.println(job.toString());
+        System.out.println("Now you have " + userList.size() + " tasks in the list.");
+    }
+
+    public static void deleteTask(int index) throws IndexOutOfBoundsException {
+        String info = userList.get(index).toString();
+        userList.remove(index);
+        System.out.print("Noted. I've removed this task:\n ");
+        System.out.println(info);
         System.out.println("Now you have " + userList.size() + " tasks in the list.");
     }
 
