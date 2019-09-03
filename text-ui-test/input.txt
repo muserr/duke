@@ -8,10 +8,8 @@ find book
 jumping
 event project meeting /at Mon 2-4pm
 list
-delete 3
 list
 done 5
-delete 100
 list
 find
 delete 3

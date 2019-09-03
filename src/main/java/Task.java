@@ -1,5 +1,3 @@
-import javax.print.DocFlavor;
-
 /**
  * Represents a task from user.
  */
