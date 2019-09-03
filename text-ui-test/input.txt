@@ -1,14 +1,23 @@
-list
 todo borrow book for James
+todo book club for Jasmine
+list
+deadline room booking for Eric /by saturday 3-5pm
 deadline return book /by Sunday
+list
+find book
 jumping
 event project meeting /at Mon 2-4pm
 list
 delete 3
 list
-funky basslines
 done 5
 delete 100
+list
+find
+delete 3
+list
+delete 100
+done 6
 deadline homework assignment /by 2/12/2019 1800
 list
 bye

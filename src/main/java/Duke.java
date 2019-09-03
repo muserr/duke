@@ -52,6 +52,34 @@ public class Duke {
                         System.out.println("Please enter a valid index");
                     }
 
+                } else if (userControl.equals("find")) {
+                    try {
+                        // Finding by keyword
+                        String keyword = userInputsArray[1];
+                        ArrayList<Task> searchList = new ArrayList<Task>();
+
+                        for (Task taskQuery : userList) {
+                            // Find task by substring
+                            if (taskQuery.descriptionSearch(keyword) == true) {
+                                searchList.add(taskQuery);
+                            }
+                        }
+
+                        // Display results of search
+                        System.out.println("Here are the matching tasks in your list for \"" + keyword + "\":");
+                        for (int i = 0; i < searchList.size(); ++i) {
+                            Task currentTask = searchList.get(i);
+
+                            // New modifications to the display
+                            System.out.println(i + 1
+                                    + "."
+                                    + currentTask.toString()
+                            );
+                        }
+                    } catch (NullPointerException | IndexOutOfBoundsException e) {
+                        System.out.println("Your search keyword cannot be empty");
+                    }
+
                 } else {
                     // For other tasks i.e. Deadline, Todo, Event
                     if (userControl.equals("deadline")) {
@@ -143,11 +171,11 @@ public class Duke {
     }
 
     public static void deleteTask(int index) throws IndexOutOfBoundsException {
-            String info = userList.get(index).toString();
-            userList.remove(index);
-            System.out.print("Noted. I've removed this task:\n ");
-            System.out.println(info);
-            System.out.println("Now you have " + userList.size() + " tasks in the list.");
+        String info = userList.get(index).toString();
+        userList.remove(index);
+        System.out.print("Noted. I've removed this task:\n ");
+        System.out.println(info);
+        System.out.println("Now you have " + userList.size() + " tasks in the list.");
     }
 
     /**
