@@ -1,3 +1,2 @@
 todo|true|washing clothes
-deadline|false|Laundry|/by|8/1/2013 0000
-event|true|school|/at|Campsite 1
+deadline|false|Laundry|/by|8 January 2013, 12:00 AM
