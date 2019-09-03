@@ -4,12 +4,11 @@ deadline return book /by Sunday
 jumping
 event project meeting /at Mon 2-4pm
 list
-done 1
-tennis player
-done 3
+delete 3
 list
 funky basslines
 done 5
+delete 100
 deadline homework assignment /by 2/12/2019 1800
 list
 bye
