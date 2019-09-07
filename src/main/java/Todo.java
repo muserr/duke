@@ -1,14 +1,26 @@
-public class Todo extends Task{
+/**
+ * Represents a task from user.
+ * A Task object stores information provided by user.
+ */
+public class Todo extends Task {
+
     /**
-     * Identical parameters passed for Task and ToDo
-     * @param description Obtain user inputs
+     * Constructor for Todo that initializes task description.
+     *
+     * @param description Description of task.
      */
-    Todo (String description) {
+    Todo(String description) {
         super(description);
         this.display = "T";
     }
 
-    Todo (String completion, String description) {
+    /**
+     * Another constructor for Todo.
+     *
+     * @param completion Task status
+     * @param description Description of task
+     */
+    Todo(String completion, String description) {
         super(description);
         this.display = "T";
 
@@ -18,11 +30,21 @@ public class Todo extends Task{
         }
     }
 
+    /**
+     * Method returns a formatted string that can be used for storage.
+     *
+     * @return Formatted string for storage
+     */
     @Override
     public String toString() {
         return "[T][" + super.getStatusIcon() + "] " + super.description;
     }
 
+    /**
+     * Formats Todo object for writing to file.
+     *
+     * @return Formatted string to be written to file
+     */
     @Override
     public String lineWriter() {
         return "todo|"

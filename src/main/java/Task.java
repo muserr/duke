@@ -1,5 +1,6 @@
 /**
  * Represents a task from user.
+ * A Task object stores information provided by user.
  */
 public class Task {
     protected String description;
@@ -8,7 +9,8 @@ public class Task {
     protected String completed = "true";
 
     /**
-     * Default constructor.
+     * Default constructor for Task.
+     *
      * @param description Description of task provided
      */
     public Task(String description) {
@@ -17,24 +19,28 @@ public class Task {
     }
 
     /**
-     * Obtain task status as an icon.
+     * Method obtains task status as an icon.
+     * Returns 'Y' for complete and 'N' for incomplete.
+     *
      * @return isDone Icon representation of isDone
      */
     public String getStatusIcon() {
-        // Return Y for complete or N for incomplete
         return (isDone ? "Y" : "N");
     }
 
     /**
-     * Provides the abbreviation for the task
-     * @return display Letter representative of the task
+     * Method obtains task abbreviation.
+     * Returns displayed letter of the task.
+     *
+     * @return display Letter representative of task
      */
     public String getDisplayIcon() {
         return this.display;
     }
 
     /**
-     * Modifies status variable.
+     * Method modifies status variable.
+     *
      * @return description Description of task
      */
     public String getStatusDescription() {
@@ -49,13 +55,23 @@ public class Task {
     }
 
     /**
-     * Empty String generator
-     * @return Return an empty string
+     * Method returns an empty string.
+     *
+     * @return An empty string
      */
-    public String lineWriter(){
+    public String lineWriter() {
         return "";
     }
 
+    /**
+     * Method searches for a keyword and returns status if keyword
+     * is found in description found.
+     * Returns true if keyword is found in description is found
+     * and returns false if keyword in description is not found.
+     *
+     * @param keyword Search query from user
+     * @return True if keyword is found in description, otherwise return false
+     */
     public boolean descriptionSearch(String keyword) {
         return this.description.contains(keyword);
     }

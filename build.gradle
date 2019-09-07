@@ -7,6 +7,11 @@ plugins {
    id 'com.github.johnrengelman.shadow' version '5.1.0'
 }
 
+// To obtain user inputs
+run {
+    standardInput = System.in
+}
+
 group 'seedu.duke'
 version '0.1.0'
 

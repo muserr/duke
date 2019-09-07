@@ -1,0 +1,132 @@
+__________________________________________________
+Hello! I'm Duke.
+What can I do for you?
+__________________________________________________
+Got it. I've added this task:
+ [T][N] borrow book for James
+Now you have 3 tasks in the list.
+__________________________________________________
+
+Got it. I've added this task:
+ [T][N] book club for Jasmine
+Now you have 4 tasks in the list.
+__________________________________________________
+
+Here are the tasks in your list:
+1.[T][Y] washing clothes
+2.[D][N] Laundry (by: 8 January 2013, 12:00 AM)
+3.[T][N] borrow book for James
+4.[T][N] book club for Jasmine
+__________________________________________________
+
+Got it. I've added this task:
+ [D][N] room booking for Eric (by: saturday 3-5pm)
+Now you have 5 tasks in the list.
+__________________________________________________
+
+Got it. I've added this task:
+ [D][N] return book (by: Sunday)
+Now you have 6 tasks in the list.
+__________________________________________________
+
+Here are the tasks in your list:
+1.[T][Y] washing clothes
+2.[D][N] Laundry (by: 8 January 2013, 12:00 AM)
+3.[T][N] borrow book for James
+4.[T][N] book club for Jasmine
+5.[D][N] room booking for Eric (by: saturday 3-5pm)
+6.[D][N] return book (by: Sunday)
+__________________________________________________
+
+Here are the matching tasks in your list for "book":
+1.[T][Y] washing clothes
+2.[D][N] Laundry (by: 8 January 2013, 12:00 AM)
+3.[T][N] borrow book for James
+4.[T][N] book club for Jasmine
+5.[D][N] room booking for Eric (by: saturday 3-5pm)
+6.[D][N] return book (by: Sunday)
+__________________________________________________
+
+OOPS!!! I'm sorry, but I don't know what that means :-(
+__________________________________________________
+
+Got it. I've added this task:
+ [E][N] project meeting (at: Mon 2-4pm)
+Now you have 7 tasks in the list.
+__________________________________________________
+
+Here are the tasks in your list:
+1.[T][Y] washing clothes
+2.[D][N] Laundry (by: 8 January 2013, 12:00 AM)
+3.[T][N] borrow book for James
+4.[T][N] book club for Jasmine
+5.[D][N] room booking for Eric (by: saturday 3-5pm)
+6.[D][N] return book (by: Sunday)
+7.[E][N] project meeting (at: Mon 2-4pm)
+__________________________________________________
+
+Here are the tasks in your list:
+1.[T][Y] washing clothes
+2.[D][N] Laundry (by: 8 January 2013, 12:00 AM)
+3.[T][N] borrow book for James
+4.[T][N] book club for Jasmine
+5.[D][N] room booking for Eric (by: saturday 3-5pm)
+6.[D][N] return book (by: Sunday)
+7.[E][N] project meeting (at: Mon 2-4pm)
+__________________________________________________
+
+Nice! I've marked this task as done:
+[Y] room booking for Eric
+__________________________________________________
+
+Here are the tasks in your list:
+1.[T][Y] washing clothes
+2.[D][N] Laundry (by: 8 January 2013, 12:00 AM)
+3.[T][N] borrow book for James
+4.[T][N] book club for Jasmine
+5.[D][Y] room booking for Eric (by: saturday 3-5pm)
+6.[D][N] return book (by: Sunday)
+7.[E][N] project meeting (at: Mon 2-4pm)
+__________________________________________________
+
+Your search keyword cannot be empty
+__________________________________________________
+
+Noted. I've removed this task:
+ [T][N] borrow book for James
+Now you have 6 tasks in the list.
+__________________________________________________
+
+Here are the tasks in your list:
+1.[T][Y] washing clothes
+2.[D][N] Laundry (by: 8 January 2013, 12:00 AM)
+3.[T][N] book club for Jasmine
+4.[D][Y] room booking for Eric (by: saturday 3-5pm)
+5.[D][N] return book (by: Sunday)
+6.[E][N] project meeting (at: Mon 2-4pm)
+__________________________________________________
+
+Please enter a valid index
+__________________________________________________
+
+Nice! I've marked this task as done:
+[Y] project meeting
+__________________________________________________
+
+Got it. I've added this task:
+ [D][N] homework assignment (by: 2 December 2019, 6:00 PM)
+Now you have 7 tasks in the list.
+__________________________________________________
+
+Here are the tasks in your list:
+1.[T][Y] washing clothes
+2.[D][N] Laundry (by: 8 January 2013, 12:00 AM)
+3.[T][N] book club for Jasmine
+4.[D][Y] room booking for Eric (by: saturday 3-5pm)
+5.[D][N] return book (by: Sunday)
+6.[E][Y] project meeting (at: Mon 2-4pm)
+7.[D][N] homework assignment (by: 2 December 2019, 6:00 PM)
+__________________________________________________
+
+Bye. Hope to see you again soon!
+__________________________________________________

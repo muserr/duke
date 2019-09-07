@@ -1,23 +1,32 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
 import java.util.ArrayList;
 
+/**
+ * Class contains methods to read and write from text files.
+ */
 public class FileStorage {
 
     private static String Pathway;
-    // private BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private BufferedReader brFileRead;
-
-    // Declare userList as a static variable
     private static ArrayList<Task> userList;
 
-     FileStorage(String pathway) {
-         this.Pathway = pathway;
-     }
+    /**
+     * Constructor for FileStorage.
+     *
+     * @param pathway String containing the directory of file
+     */
+    FileStorage(String pathway) {
+        this.Pathway = pathway;
+    }
 
     /**
-     * Reading in lines from Text.file
+     * Method reading in data as string from Text file.
      */
-    public ArrayList<Task> docReader(){
+    public ArrayList<Task> docReader() {
         // Processing stored file
         try {
             String textFromFile;
@@ -62,7 +71,7 @@ public class FileStorage {
 
 
     /**
-     * Writing lines to Text file
+     * Method writing data as string to Text file.
      */
     public static void docWriter(ArrayList<Task> userList) {
         // Obtain user inputs and write to file

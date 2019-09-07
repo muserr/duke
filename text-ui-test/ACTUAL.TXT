@@ -76,12 +76,16 @@ Here are the tasks in your list:
 __________________________________________________
 
 Nice! I've marked this task as done:
+[Y] Laundry
+__________________________________________________
+
+Nice! I've marked this task as done:
 [Y] room booking for Eric
 __________________________________________________
 
 Here are the tasks in your list:
 1.[T][Y] washing clothes
-2.[D][N] Laundry (by: 8 January 2013, 12:00 AM)
+2.[D][Y] Laundry (by: 8 January 2013, 12:00 AM)
 3.[T][N] borrow book for James
 4.[T][N] book club for Jasmine
 5.[D][Y] room booking for Eric (by: saturday 3-5pm)
@@ -99,7 +103,7 @@ __________________________________________________
 
 Here are the tasks in your list:
 1.[T][Y] washing clothes
-2.[D][N] Laundry (by: 8 January 2013, 12:00 AM)
+2.[D][Y] Laundry (by: 8 January 2013, 12:00 AM)
 3.[T][N] book club for Jasmine
 4.[D][Y] room booking for Eric (by: saturday 3-5pm)
 5.[D][N] return book (by: Sunday)
@@ -120,7 +124,7 @@ __________________________________________________
 
 Here are the tasks in your list:
 1.[T][Y] washing clothes
-2.[D][N] Laundry (by: 8 January 2013, 12:00 AM)
+2.[D][Y] Laundry (by: 8 January 2013, 12:00 AM)
 3.[T][N] book club for Jasmine
 4.[D][Y] room booking for Eric (by: saturday 3-5pm)
 5.[D][N] return book (by: Sunday)

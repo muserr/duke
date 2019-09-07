@@ -1,7 +1,9 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-// Making sense of user commands
+/**
+ * Class to parse and tokenize user commands.
+ */
 public class Parser {
     private static Scanner s = new Scanner(System.in);
 
@@ -9,21 +11,31 @@ public class Parser {
     private TaskList taskList;
     private UserInteraction userInteraction;
 
+    /**
+     * Constructor to create new objects for FileStorage,
+     * TaskList and UserInteraction.
+     *
+     * @param pathway String containing the directory of file
+     */
     Parser(String pathway) {
-        // Instantiation
         fs = new FileStorage(pathway);
         taskList = new TaskList();
         userInteraction = new UserInteraction();
     }
 
+    /**
+     * Method reading and interpreting user inputs.
+     *
+     * @param userList List containing tasks from user
+     */
     public void run(ArrayList<Task> userList) {
 
         // Read in additional userInputs
         while (s.hasNext()) {
-            // Obtain inputs from users as a string
-            String userInputs = s.nextLine();
+            // Obtain inputs from users as a string and trim
+            String userInputs = s.nextLine().trim();
 
-            // The limit is extremely important here
+            // The limit of 2 is extremely important here
             String[] userInputsArray = userInputs.split(" ", 2);
             String userControl = userInputsArray[0];
 
