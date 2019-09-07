@@ -1,2 +1,2 @@
 todo|true|washing clothes
-deadline|false|Laundry|/by|8 January 2013, 12:00 AM
+deadline|false|Laundry|/by|8 January 2013, 12:00 AM)

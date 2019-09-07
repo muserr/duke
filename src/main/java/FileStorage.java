@@ -9,13 +9,15 @@ import java.util.ArrayList;
  * Class contains methods to read and write from text files.
  */
 public class FileStorage {
-
+    /** Stores path directory for file */
     private static String Pathway;
+    /** Reference to BufferedReader */
     private BufferedReader brFileRead;
+    /** ArrayList to store user inputs */
     private static ArrayList<Task> userList;
 
     /**
-     * Constructor for FileStorage.
+     * Initializes the directory of file based on user inputs.
      *
      * @param pathway String containing the directory of file
      */
@@ -24,7 +26,7 @@ public class FileStorage {
     }
 
     /**
-     * Method reading in data as string from Text file.
+     * Reads in data as string from text file.
      */
     public ArrayList<Task> docReader() {
         // Processing stored file
@@ -35,8 +37,6 @@ public class FileStorage {
             this.brFileRead = new BufferedReader(new FileReader(Pathway));
 
             while ((textFromFile = brFileRead.readLine()) != null) {
-                // System.out.println(textFromFile);
-
                 // Parse text into Task readable objects
                 String[] textArray = textFromFile.split("\\|");
 
@@ -71,7 +71,7 @@ public class FileStorage {
 
 
     /**
-     * Method writing data as string to Text file.
+     * Writes data as string to text file.
      */
     public static void docWriter(ArrayList<Task> userList) {
         // Obtain user inputs and write to file

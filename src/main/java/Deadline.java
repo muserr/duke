@@ -8,12 +8,11 @@ import java.util.Date;
  * A Deadline object corresponds to details users require for deadline.
  */
 public class Deadline extends Task {
-
+    /** Deadline stated by user */
     protected String by;
 
     /**
-     * Constructor for Deadline class that initializes description
-     * and deadline of task.
+     * Initializes description and deadline of Deadline.
      *
      * @param description Describes the task from user
      * @param by Deadline for user to complete the task by
@@ -28,7 +27,7 @@ public class Deadline extends Task {
     }
 
     /**
-     * Another constructor for Deadline.
+     * Initializes completion, description and deadline of Deadline.
      *
      * @param completion States if task has been complete
      * @param description Describes the task from user
@@ -47,7 +46,7 @@ public class Deadline extends Task {
     }
 
     /**
-     * Method returns a formatted string that can be used for storage.
+     * Returns a formatted string for storage.
      *
      * @return Formatted string for general storage
      */
@@ -57,7 +56,9 @@ public class Deadline extends Task {
                 + super.getStatusIcon()
                 + "] "
                 + super.getStatusDescription()
-                + " (by: " + this.by + ")";
+                + " (by: "
+                + this.by
+                + ")";
     }
 
     /**
@@ -76,8 +77,7 @@ public class Deadline extends Task {
     }
 
     /**
-     * Method that obtains date as a string and formats that string
-     * to day/mounth/year 24-hour format.
+     * Formats string to a date format.
      *
      * @param inputDate Date as a string
      */

@@ -2,11 +2,11 @@
  * Class containing functions for interactions with user.
  */
 public class UserInteraction {
-
+    /** Lines to symbolize end of current activity */
     private static String lines = "__________________________________________________\n";
 
     /**
-     * Introductory greeting towards user.
+     * Says hello to user.
      */
     public void greeting() {
         String greet = "Hello! I'm Duke.\n" + "What can I do for you?\n";
@@ -14,7 +14,7 @@ public class UserInteraction {
     }
 
     /**
-     * Farewell greeting towards user.
+     * Says goodbye to user.
      */
     public void farewell() {
         String bye = "Bye. Hope to see you again soon!";
@@ -23,7 +23,7 @@ public class UserInteraction {
     }
 
     /**
-     * Method printing lines marking next activity.
+     * Prints lines to mark the end of current activity.
      */
     public void printLines() {
         System.out.println(lines);

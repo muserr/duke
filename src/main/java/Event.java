@@ -3,10 +3,11 @@
  * A Event object corresponds to details users require for events.
  */
 public class Event extends Task {
+    /** Describes location of event */
     protected String at;
 
     /**
-     * Constructor that initializes the location of event and description.
+     * Initializes the location of event and description.
      *
      * @param description Describes the task from user
      * @param at Location for event to be held at
@@ -18,7 +19,7 @@ public class Event extends Task {
     }
 
     /**
-     * Another constructor for Event.
+     * Initializes the location of event and description using alternative constructor.
      *
      * @param completion States if task have been completed
      * @param description Describes the task from user
@@ -35,7 +36,7 @@ public class Event extends Task {
     }
 
     /**
-     * Method returns a formatted string that can be used for storage purposes.
+     * Returns a formatted string that can be used for storage purposes.
      *
      * @return Formatted string for storage
      */

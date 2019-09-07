@@ -3,9 +3,13 @@
  * A Task object stores information provided by user.
  */
 public class Task {
+    /** Describes the contents of task */
     protected String description;
+    /** Describes letter representative of task */
     protected String display;
+    /** Describes completion of task */
     protected boolean isDone;
+    /** Describes completion of task */
     protected String completed = "true";
 
     /**

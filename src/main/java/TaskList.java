@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class TaskList {
 
     /**
-     * Method to display content of list.
+     * Displays content of list.
      */
     public void displayList(ArrayList<Task> userList) {
         System.out.println("Here are the tasks in your list:");
@@ -14,7 +14,7 @@ public class TaskList {
     }
 
     /**
-     * Method to display search results back to users if any.
+     * Displays search results back to users if any.
      *
      * @param keyword User search query
      * @param userList List containing tasks from user
@@ -33,7 +33,7 @@ public class TaskList {
     }
 
     /**
-     * Method to display tasks present in list to user.
+     * Displays tasks present in list to user.
      *
      * @param list List containing tasks from user
      */
@@ -50,11 +50,11 @@ public class TaskList {
     }
 
     /**
-     * For task that has been considered complete.
+     * Sets task to completion.
      *
      * @param userInputsArray Array consisting of task and index
      */
-    public static void taskDone(String[] userInputsArray, ArrayList<Task> userList) {
+    public static void setTaskComplete(String[] userInputsArray, ArrayList<Task> userList) {
         // Accounting for 1 base index position
         int taskIndex = Integer.parseInt(userInputsArray[1]) - 1;
         Task currentTask = userList.get(taskIndex);
@@ -72,12 +72,12 @@ public class TaskList {
     }
 
     /**
-     * Method to mark the completion of a task.
+     * Adds current task to list.
      *
      * @param job Task object
      * @param userList List containing tasks from user
      */
-    public static void addSuccess(Task job, ArrayList<Task> userList) {
+    public static void addTask(Task job, ArrayList<Task> userList) {
         userList.add(job);
         System.out.print("Got it. I've added this task:\n ");
         System.out.println(job.toString());
@@ -85,7 +85,7 @@ public class TaskList {
     }
 
     /**
-     * Method to remove a task specified by user.
+     * Removes a task specified by user.
      *
      * @param index Index of task in the list
      * @param userList List containing tasks from user

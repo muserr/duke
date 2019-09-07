@@ -5,7 +5,7 @@
 public class Todo extends Task {
 
     /**
-     * Constructor for Todo that initializes task description.
+     * Initializes description of Todo.
      *
      * @param description Description of task.
      */
@@ -15,7 +15,7 @@ public class Todo extends Task {
     }
 
     /**
-     * Another constructor for Todo.
+     * Initializes description and completion of Todo.
      *
      * @param completion Task status
      * @param description Description of task
@@ -31,7 +31,7 @@ public class Todo extends Task {
     }
 
     /**
-     * Method returns a formatted string that can be used for storage.
+     * Returns a formatted string for storage.
      *
      * @return Formatted string for storage
      */
