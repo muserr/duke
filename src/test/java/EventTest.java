@@ -1,9 +1,10 @@
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * Tests the Event class.
+ */
 public class EventTest {
-
     @Test
     public void testToString() {
         String description = "Project meeting";
@@ -20,19 +21,20 @@ public class EventTest {
                 event.toString());
     }
 
-    // @Test
-    // public void testLineWriter() {
-    //     String description = "Project meeting";
-    //     String location = "COM1";
+    @Test
+    public void testLineWriter() {
+        String description = "Project meeting";
+        String location = "COM1";
 
-    //     Event event = new Event(description, location);
+        Event event = new Event(description, location);
 
-    //     assertEquals("event|"
-    //                     + event.getStatusIcon()
-    //                     + "|"
-    //                     + event.getStatusDescription()
-    //                     + "|/at|"
-    //                     + event.at,
-    //             event.lineWriter());
-    // }
+        assertEquals("event|"
+                        + "false"
+                        + "|"
+                        + "Project meeting"
+                        + "|/at|"
+                        + "COM1",
+                event.lineWriter()
+        );
+    }
 }

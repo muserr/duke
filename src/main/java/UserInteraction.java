@@ -2,7 +2,7 @@
  * Class containing functions for interactions with user.
  */
 public class UserInteraction {
-    /** Lines to symbolize end of current activity */
+    /** Lines to symbolize end of current activity. */
     private static String lines = "__________________________________________________\n";
 
     /**

@@ -5,14 +5,14 @@ import java.util.Scanner;
  * Class to parse and tokenize user commands.
  */
 public class Parser {
-    /** Scanner class for reading in inputs */
+    /** Scanner class for reading in inputs. */
     private static Scanner s = new Scanner(System.in);
 
-    /** Reference to FileStorage */
+    /** Reference to FileStorage. */
     private FileStorage fs;
-    /** Reference to TaskList */
+    /** Reference to TaskList. */
     private TaskList taskList;
-    /** Reference to UserInteraction */
+    /** Reference to UserInteraction. */
     private UserInteraction userInteraction;
 
     /**

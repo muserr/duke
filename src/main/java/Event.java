@@ -3,7 +3,7 @@
  * A Event object corresponds to details users require for events.
  */
 public class Event extends Task {
-    /** Describes location of event */
+    /** Describes location of event. */
     protected String at;
 
     /**

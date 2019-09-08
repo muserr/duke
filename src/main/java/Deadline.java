@@ -8,7 +8,7 @@ import java.util.Date;
  * A Deadline object corresponds to details users require for deadline.
  */
 public class Deadline extends Task {
-    /** Deadline stated by user */
+    /** Deadline stated by user. */
     protected String by;
 
     /**

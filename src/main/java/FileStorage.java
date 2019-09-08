@@ -9,11 +9,11 @@ import java.util.ArrayList;
  * Class contains methods to read and write from text files.
  */
 public class FileStorage {
-    /** Stores path directory for file */
+    /** Stores path directory for file. */
     private static String Pathway;
-    /** Reference to BufferedReader */
+    /** Reference to BufferedReader. */
     private BufferedReader brFileRead;
-    /** ArrayList to store user inputs */
+    /** ArrayList to store user inputs. */
     private static ArrayList<Task> userList;
 
     /**
